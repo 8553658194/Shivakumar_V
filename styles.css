@@ -1,32 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 20px;
 }
 
-header {
-    text-align: center;
-    background: #f4f4f4;
-    padding: 20px;
+.profile-img {
+    width: 150px;
+    height: auto;
 }
 
-h1 {
-    color: #333;
+.timeline {
+    border-left: 2px solid #333;
 }
 
-section {
+.timeline-item {
     margin: 20px 0;
-    padding: 15px;
-    background: #eaeaea;
-    border-radius: 8px;
+    padding-left: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #f4f4f4;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+h2, h4 {
+    color: #333;
 }
