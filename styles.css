@@ -1,22 +1,78 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0 20px;
+}
+
+section {
+    background-color: white; /* White sections for content */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h3 {
+    color: #2575fc; /* Primary color for subheadings */
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p, li {
     line-height: 1.6;
 }
 
-.profile-img {
-    width: 150px;
-    height: auto;
+ul {
+    padding-left: 20px; /* Indent for list items */
 }
 
-.timeline {
-    border-left: 2px solid #333;
+footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
-.timeline-item {
-    margin: 20px 0;
-    padding-left: 20px;
+footer a {
+    color: #f0f0f0; /* Light color for links */
+    text-decoration: none;
 }
 
-h2, h4 {
-    color: #333;
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 10px; /* Smaller padding for mobile */
+    }
+    
+    h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller subheading on mobile */
+    }
 }
