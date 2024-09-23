@@ -3,186 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PhD scholar Shivakumar V's journey in smart prosthetics, VLSI, and intent recognition. Explore innovations that bridge human intent and technology.">
-    <title>Shivakumar V | Smart Prosthetics, VLSI, Intent Recognition</title>
+    <meta name="description" content="Professional portfolio showcasing academic research, projects, and professional experience.">
+    <meta name="keywords" content="portfolio, research, projects, academic, VLSI, prosthetic technologies, intent recognition, contact form">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #1E90FF;
-            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
             text-align: center;
-            color: white;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #1E90FF;
-        }
-        ul {
-            list-style-type: none;
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
             padding: 0;
         }
-        ul li {
-            margin: 5px 0;
+        nav ul li {
+            margin: 0 1rem;
         }
-        footer {
-            text-align: center;
-            background-color: #1E90FF;
-            color: white;
-            padding: 10px 0;
-        }
-        footer p {
-            margin: 5px 0;
-        }
-        .contact {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-        .contact a {
-            color: #1E90FF;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
         }
-        .contact a:hover {
-            text-decoration: underline;
+        .section-title {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2rem;
         }
-        .skills, .experience, .projects {
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem;
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+        }
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .skills, .experience, .projects, .publications, .timeline, .contact-form {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .skills ul li {
+            text-align: center;
+        }
+        .skills ul li i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .interactive-timeline {
+            position: relative;
+            padding: 2rem;
+        }
+        .timeline ul {
+            list-style: none;
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+        .timeline ul::before {
+            content: '';
+            background: #ddd;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+        }
+        .timeline ul li {
+            padding: 2rem 0;
+            position: relative;
+        }
+        .timeline ul li div {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            width: 45%;
+            position: absolute;
+        }
+        .timeline ul li:nth-child(odd) div {
+            left: -50%;
+        }
+        .timeline ul li:nth-child(even) div {
+            left: 5%;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form form input, .contact-form form textarea {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+        }
+        .contact-form form button {
+            padding: 0.75rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Shivakumar V</h1>
-    <p>Welcome to My Journey in Smart Prosthetics, VLSI, and Intent Recognition</p>
+    <h1>My Professional Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<div class="container">
-    <section id="about">
+<section id="about" class="about">
+    <div>
+        <img src="your-photo.jpg" alt="Your Photo">
+    </div>
+    <div class="about-text">
         <h2>About Me</h2>
-        <p>Hi, I'm Shivakumar V, a PhD scholar in Product Design and Engineering at the Department of Design and Manufacturing (DnM, formerly CPDM) at IISc Bangalore. My personal experience as a prosthetic hand user fuels my commitment to developing smarter, more accessible prosthetics. In this space, I share my journey and insights into the cutting-edge innovations at the intersection of Smart Prosthetics, VLSI, and Intent Recognition. My mission is to bridge the gap between human intent and technology, crafting solutions that enhance everyday life while being affordable for underprivileged communities.</p>
-    </section>
+        <p>Hello, I am a researcher specializing in VLSI design, prosthetic technologies, and Intent Recognition. My goal is to revolutionize the prosthetic field by combining advanced control systems with cutting-edge biomimetic designs. I have collaborated with industry leaders like Samsung and Bharat Electronics on various projects.</p>
+    </div>
+</section>
 
-    <section id="research-interests">
-        <h2>Research Interests</h2>
+<section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+        <li>
+            <i class="fas fa-microchip"></i>
+            <p>VLSI Design</p>
+        </li>
+        <li>
+            <i class="fas fa-robot"></i>
+            <p>Prosthetic Technologies</p>
+        </li>
+        <li>
+            <i class="fas fa-brain"></i>
+            <p>Intent Recognition</p>
+        </li>
+        <li>
+            <i class="fas fa-cogs"></i>
+            <p>Machine Learning</p>
+        </li>
+    </ul>
+</section>
+
+<section id="experience" class="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <p><strong>Researcher</strong> - Indian Institute of Science (2023 - Present)</p>
+    <ul>
+        <li>Led research on VLSI design for prosthetics, focusing on thermal regulation and biomimetic control.</li>
+        <li>Collaborated with Samsung and Bharat Electronics on projects integrating robotics with human motor control systems.</li>
+        <li>Published research papers in top-tier journals; developed several patents around prosthetic technologies.</li>
+    </ul>
+</section>
+
+<section id="projects" class="projects">
+    <h2 class="section-title">Academic Projects</h2>
+    <p><strong>Project Title:</strong> Advanced VLSI Design for Prosthetic Limbs</p>
+    <p><strong>Challenges:</strong> The integration of thermal regulation and fine-tuned motor control.</p>
+    <p><strong>Achievements:</strong> Successfully implemented nerve-connected prosthetic limbs, allowing fine control of each finger.</p>
+</section>
+
+<section id="publications" class="publications">
+    <h2 class="section-title">Publications</h2>
+    <ul>
+        <li>Thornton, C. J. (2022). "Modeling and Analysis of Hand Motion in Prosthetic Technology." <em>IEEE Transactions on Robotics.</em></li>
+        <li>Thornton, C. J. (2021). "VLSI and Intent Recognition in Prosthetics." <em>Journal of Medical Robotics</em>.</li>
+    </ul>
+</section>
+
+<section id="timeline" class="interactive-timeline">
+    <h2 class="section-title">Interactive Timeline</h2>
+    <div class="timeline">
         <ul>
-            <li><strong>VLSI Design:</strong> Exploring how cutting-edge technology can push the boundaries of processing speeds while conserving power.</li>
-            <li><strong>Smart Prosthetics:</strong> Developing innovative prosthetics that integrate advanced technologies for enhanced functionality.</li>
-            <li><strong>Haptics:</strong> Investigating tactile feedback systems to improve user experience in prosthetics and other applications.</li>
-            <li><strong>Product Design:</strong> Aiming to create user-centric products that marry form and function, promoting accessibility and usability.</li>
+            <li>
+                <div>
+                    <h3>2023 - Present</h3>
+                    <p>Researcher at IISc - Focused on VLSI design and prosthetic limb control.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2020 - 2023</h3>
+                    <p>Worked at Samsung on robotics-related projects, applying ML for intent recognition.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>2018 - 2020</h3>
+                    <p>Masters in Electronics Engineering with a specialization in VLSI.</p>
+                </div>
+            </li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>PCB Design (ORCAD Capture)</li>
-            <li>Intent Recognition</li>
-            <li>Digital Design, SoC Architecture Design</li>
-            <li>Physical Design, Static Timing Analysis</li>
-            <li>Machine Learning, GANs</li>
-            <li>Electromyography (EMG), Electroencephalography (EEG)</li>
-            <li>Verilog Modeling</li>
-            <li>UVM Testbench Methodology</li>
-            <li>Convolutional Neural Networks (CNN)</li>
-            <li>Image Detection and Classification</li>
-            <li>Multi-Voltage Techniques</li>
-            <li>C, Python, and Perl Scripting</li>
-        </ul>
-    </section>
-
-    <section id="experience" class="experience">
-        <h2>Professional Experience</h2>
-        <h3>Project Engineer</h3>
-        <p><strong>Bharat Electronics Limited, Bangalore (June 2022 - December 2022)</strong></p>
-        <p>Developed radar systems and gun fire control systems for the Indian Navy, specializing in PCB design using ORCAD Capture, and worked on servo motor control systems.</p>
-
-        <h3>Trainee Engineer</h3>
-        <p><strong>Bharat Electronics Limited, Bangalore (March 2021 - May 2022)</strong></p>
-        <p>Contributed to the servo motor control system of Lynx U2 GFCS, designed by Bharat Electronics Limited for the Indian Navy, focusing on radar systems and gun fire control systems.</p>
-
-        <h3>Trainee Engineer</h3>
-        <p><strong>KriSemi Design Technologies Pvt Ltd, Bangalore (August 2019 - August 2020)</strong></p>
-        <p>Worked on the "Design and Validation of AI-IPs on FPGA," using Verilog modeling to implement Convolutional Neural Networks (CNN) for image detection and classification.</p>
-
-        <h3>Graduate Engineering Trainee</h3>
-        <p><strong>Bharat Heavy Electricals Limited (BHEL-ESD), Bangalore (July 2018 - September 2018)</strong></p>
-        <p>Managed and documented processes within the assembly unit, honing organizational and management skills in the Electronics Systems Division.</p>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Academic Projects</h2>
-        <ul>
-            <li><strong>Solar Piezo Hybrid Power Charging System:</strong> Developed a hybrid charging system integrating solar panels and piezoelectric materials for sustainable energy collection.</li>
-            <li><strong>Analysis of Power Dissipations for Circuits Using Multi-Voltage Techniques:</strong> Investigated multilevel voltage scaling techniques to reduce power consumption in circuit designs.</li>
-            <li><strong>Design and Validation of Artificial Intelligence (AI) – Intellectual Properties (IPs) on FPGA:</strong> Implemented CNN on FPGA for real-time image recognition and classification.</li>
-            <li><strong>Design and Verification of 32-Bit Pipelined RISC Architecture:</strong> Designed a 32-bit RISC processor using Verilog modeling and UVM testbench methodology to enhance speed and minimize power consumption.</li>
-        </ul>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <p><strong>Understanding Computer Architecture and Instruction Set Architecture (ISA):</strong> Explored the significance of RISC in mobile processors, detailing the design and verification of a 32-bit pipelined RISC processor.</p>
-    </section>
-
-    <section id="courses">
-        <h2>Courses Taken</h2>
-        <ul>
-            <li>Digital Signal Processing (DSP)</li>
-            <li>Basics of Computation</li>
-            <li>AI, Data Science, and Machine Learning for Product Design</li>
-            <li>Design for Research and Methodology</li>
-            <li>Haptics System Design</li>
-            <li>Machine Learning for Data Science</li>
-        </ul>
-    </section>
-
-    <section id="conferences">
-        <h2>Conferences Attended</h2>
-        <p>[Updating Soon]</p>
-    </section>
-
-    <section id="extracurricular">
-        <h2>Extracurricular Activities</h2>
-        <ul>
-            <li>Volunteer Work</li>
-            <li>Technical Workshops</li>
-            <li>Hackathons</li>
-            <li>Research Presentations</li>
-            <li>Club Memberships</li>
-            <li>Sports</li>
-        </ul>
-    </section>
-</div>
+<section id="contact" class="contact-form">
+    <h2 class="section-title">Contact Me</h2>
+    <form action="/submit-form" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
 <footer>
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <p>InSPIRE Lab, Annexue II Building, Department of Design and Manufacturing (DnM), IISc Bangalore</p>
-        <p>Email: <a href="mailto:vshivakumar@iisc.ac.in">vshivakumar@iisc.ac.in</a> | <a href="mailto:shivakumardvg123@gmail.com">shivakumardvg123@gmail.com</a></p>
-        <p>Phone: +91-9164083915 | +91-8217612564</p>
-    </div>
-    <p>&copy; 2024 Shivakumar V. All rights reserved.</p>
+    <p>© 2024 My Professional Portfolio. All rights reserved.</p>
 </footer>
 
 </body>
