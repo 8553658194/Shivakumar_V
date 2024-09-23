@@ -117,7 +117,7 @@
         <ul>
             <li>PCB Design (ORCAD Capture)</li>
             <li>Intent Recognition</li>
-            <li>Digital Design, SoC Architecture design</li>
+            <li>Digital Design, SoC Architecture Design</li>
             <li>Physical Design, Static Timing Analysis</li>
             <li>Machine Learning, GANs</li>
             <li>Electromyography (EMG), Electroencephalography (EEG)</li>
@@ -126,7 +126,7 @@
             <li>Convolutional Neural Networks (CNN)</li>
             <li>Image Detection and Classification</li>
             <li>Multi-Voltage Techniques</li>
-            <li>C, Python and Perl scripting</li>
+            <li>C, Python, and Perl scripting</li>
         </ul>
     </section>
 
@@ -134,27 +134,27 @@
         <h2>Professional Experience</h2>
         <h3>Project Engineer, Bharat Electronics Limited, Bangalore</h3>
         <p><em>June 2022 - December 2022</em></p>
-        <p>Developed radar systems and gunfire control systems for the Indian Navy, enhancing safety measures. Specialized in PCB design using ORCAD Capture and worked on servo motor control systems.</p>
-        
+        <p>As a Project Engineer, I developed radar systems and gunfire control systems for the Indian Navy, enhancing safety measures. I specialized in PCB design using ORCAD Capture, creating intricate circuit boards vital for system reliability. Additionally, I worked on servo motor control systems, ensuring accurate operation of defense equipment. My role included detailed documentation of design processes and testing protocols, adhering to stringent quality standards.</p>
+
         <h3>Trainee Engineer, Bharat Electronics Limited, Bangalore</h3>
         <p><em>March 2021 - May 2022</em></p>
-        <p>Contributed to the servo motor control system of the GFCS called Lynx U2, ensuring safety for the Indian Navy against air and ship threats.</p>
+        <p>As a Trainee Engineer in the radar systems and gunfire control system team, I contributed to the servo motor control system of the GFCS called Lynx U2, which plays a crucial role in ensuring safety for the Indian Navy against air and ship threats. My work involved hands-on experience with advanced technologies, PCB design, Visio drawings, and documentation.</p>
 
         <h3>Trainee Engineer, KriSemi Design Technologies Pvt Ltd, Bangalore</h3>
         <p><em>August 2019 - August 2020</em></p>
-        <p>Worked on "Design and Validation of AI-IPs on FPGA," focusing on leveraging Verilog modeling to implement CNN for image detection and classification.</p>
+        <p>I worked on the "Design and Validation of AI-IPs on FPGA," focusing on leveraging Verilog modeling to implement CNN for image detection and classification.</p>
 
         <h3>Graduate Engineering Trainee, Bharat Heavy Electricals Limited (BHEL-ESD), Bangalore</h3>
         <p><em>July 2018 - September 2018</em></p>
-        <p>Managed and documented processes within the assembly unit of the Electronics Systems Division.</p>
+        <p>I managed and documented processes within the assembly unit of the Electronics Systems Division, ensuring seamless operation of complex assembly workflows.</p>
     </section>
 
     <section id="projects">
         <h2>Academic Projects</h2>
         <ul>
             <li><strong>Solar Piezo Hybrid Power Charging System:</strong> Developed a hybrid charging system promoting sustainability.</li>
-            <li><strong>Analysis of Power Dissipations for Circuits Using Multi-Voltage Techniques:</strong> Investigated multilevel voltage scaling techniques to reduce power consumption.</li>
-            <li><strong>Design and validation of AI – Intellectual Properties (IPs) on FPGA:</strong> Implemented CNN on FPGA for real-time image recognition and classification.</li>
+            <li><strong>Analysis of Power Dissipations for Circuits Using Multi-Voltage Techniques:</strong> Investigated multilevel voltage scaling techniques to reduce overall power consumption.</li>
+            <li><strong>Design and Validation of AI – Intellectual Properties (IPs) on FPGA:</strong> Implemented CNN on FPGA for real-time image recognition and classification.</li>
             <li><strong>Design and Verification of 32-Bit Pipelined RISC Architecture:</strong> Designed an efficient 32-bit RISC processor using Verilog modeling.</li>
         </ul>
     </section>
@@ -162,7 +162,7 @@
     <section id="publications">
         <h2>Publications</h2>
         <ul>
-            <li><strong>Understanding Computer Architecture and Instruction Set Architecture (ISA):</strong> Explored the significance of RISC as a pivotal Instruction Set Architecture.</li>
+            <li><strong>Understanding Computer Architecture and Instruction Set Architecture (ISA):</strong> Explored the significance of RISC as a pivotal Instruction Set Architecture, particularly in mobile processors.</li>
         </ul>
     </section>
 
@@ -178,16 +178,57 @@
         </ul>
     </section>
 
+    <section id="conferences">
+        <h2>Conferences Attended</h2>
+        <p>[Updating Soon]</p>
+    </section>
+
+    <section id="activities">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Volunteer Work</li>
+            <li>Technical Workshops</li>
+            <li>Hackathons</li>
+            <li>Research Presentations</li>
+            <li>Club Memberships</li>
+            <li>Sports</li>
+        </ul>
+    </section>
+
     <section id="contact">
         <h2>Contact Me</h2>
         <p>InSPIRE Lab, Annexue II Building, Department of Design and Manufacturing (DnM), IISc Bangalore</p>
-        <p>Email: <a href="mailto:vshivakumar@iisc.ac.in">vshivakumar@iisc.ac.in</a></p>
+        <p>Email: <a href="mailto:vshivakumar@iisc.ac.in">vshivakumar@iisc.ac.in</a> | <a href="mailto:shivakumardvg123@gmail.com">shivakumardvg123@gmail.com</a></p>
+        <p>Phone: +91-9164083915 | +91-8217612564</p>
     </section>
 </div>
 
 <footer>
     <p>&copy; 2024 Shivakumar V. All rights reserved.</p>
 </footer>
+
+<script>
+    // Fade in sections as they are scrolled into view
+    const sections = document.querySelectorAll("section");
+    const options = {
+        root: null,
+        threshold: 0.1,
+        rootMargin: "0px"
+    };
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+    
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
 
 </body>
 </html>
